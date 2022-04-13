@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main_container{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(243, 243, 243, 1);
+    padding: 30px;
+}
+.text{
+    width: 50%;
+    height:40px;
+    text-align: center;
+}
