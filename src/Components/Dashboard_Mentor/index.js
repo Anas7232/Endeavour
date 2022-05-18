@@ -14,7 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import mentor from '../../Images/mentor.png'
 import { Container, Row,Col } from 'react-bootstrap';
 import mentor2 from '../../Images/mentor2.png'
-import detital from '../../Images/detital.png';
+import detital from '../../Images/allof.png';
 import Footer from '../Footer';
 import car from '../../Images/car.png';
 import cards from '../../Images/cards.png'
@@ -261,7 +261,7 @@ const InvestorMentor = () => {
                                         <Container style={{ borderBottom: '1px solid rgba(112, 112, 112, 1)' }}>
                                             <Row className='m-auto' style={{ padding: '20px' }}>
                                                 <Col md={3}>
-                                                    <img style={{ width: '90%' }} src={cards} alt="Car" />
+                                                    <img style={{ width: '80%' }} src={cards} alt="Car" />
                                                 </Col>
                                                 <Col md={3} className='m-auto'>
                                                     <h3 className='d-block' style={{ fontSize: '18px' }}> OneTransport </h3>
@@ -299,7 +299,7 @@ const InvestorMentor = () => {
                                         <Container style={{ borderBottom: '1px solid rgba(112, 112, 112, 1)' }}>
                                             <Row className='m-auto' style={{ padding: '20px' }}>
                                                 <Col md={3}>
-                                                    <img style={{ width: '90%' }} src={boxs} alt="Car" />
+                                                    <img style={{ width: '80%' }} src={boxs} alt="Car" />
                                                 </Col>
                                                 <Col md={3} className='m-auto'>
                                                     <h3 className='d-block' style={{ fontSize: '18px' }}> OneTransport </h3>

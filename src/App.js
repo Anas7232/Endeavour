@@ -8,6 +8,12 @@ import Investor from './Components/Dashboard_Investor';
 import IdeaBrief from './Components/Idea_brief';
 import InvestorMentor from './Components/Dashboard_Mentor'
 import Entrepreneur from './Components/Dashboard_Entrepreneur'
+import IdeasEntre from './Components/IdeasEntrepreneur';
+import NewProject from './Components/Overview';
+import DeniedIdea from './Components/Denied_Idea';
+import FaqScreen from './Components/FAQ';
+import Payment from './Components/Payment';
+import JoinWorkShop from './Components/JoinWorkShop';
 
 function App() {
   return (
@@ -21,6 +27,12 @@ function App() {
           <Route path='/ideabrief' element={<IdeaBrief />} />
           <Route path='/mentorinvestor' element={<InvestorMentor /> } />
           <Route path='/entrepreneur' element={<Entrepreneur />} />
+          <Route path='/ideasentre' element={<IdeasEntre />} />
+          <Route path='/newproject' element={<NewProject />} />
+          <Route path='/denied' element={<DeniedIdea />} />
+          <Route path='/faq' element={<FaqScreen />} />
+          <Route path='/payment' element={<Payment />} />
+          <Route path='/join' element={<JoinWorkShop />} />
         </Routes>
     </div>
   );

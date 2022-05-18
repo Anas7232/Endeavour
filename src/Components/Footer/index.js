@@ -8,26 +8,26 @@ const Footer = () => {
         <Container fluid style={{ borderTop: '1px solid rgba(177, 177, 177, 1)', borderBottom: '1px solid rgba(177, 177, 177, 1)', paddingBottom: '50px' }}>
       <Row style={{ padding: '0 10px' }}>
         <Col md={3} style={{ paddingLeft: '100px', paddingTop: '60px', paddingBottom: '30px' }}>
-          <h5 style={{ fontWeight: '500' }}> Categories </h5>
+          <h5 style={{ fontWeight: '500', fontSize: '17px' }}> Categories </h5>
         </Col>
         <Col md={3} style={{ paddingLeft: '100px', paddingTop: '60px' }}>
-          <h5 style={{ fontWeight: '500' }}> About </h5>
-          <h5 style={{ fontWeight: '400' }}> Career </h5>
-          <h5 style={{ fontWeight: '400' }}> Partnerships </h5>
-          <h5 style={{ fontWeight: '400' }}> Privacy Policy </h5>
-          <h5 style={{ fontWeight: '400' }}> Terms of Service </h5>
-          <h5 style={{ fontWeight: '400' }}> Investor Relations </h5>
+          <h5 style={{ fontWeight: '500', fontSize: '17px' }}> About </h5>
+          <h5 style={{ fontWeight: '400', fontSize: '14px' }}> Career </h5>
+          <h5 style={{ fontWeight: '400', fontSize: '14px' }}> Partnerships </h5>
+          <h5 style={{ fontWeight: '400', fontSize: '14px' }}> Privacy Policy </h5>
+          <h5 style={{ fontWeight: '400', fontSize: '14px' }}> Terms of Service </h5>
+          <h5 style={{ fontWeight: '400', fontSize: '14px' }}> Investor Relations </h5>
         </Col>
         <Col md={3} style={{ paddingLeft: '100px', paddingTop: '60px' }}>
-          <h5 style={{ fontWeight: '500' }}> Support </h5>
-          <h5 style={{ fontWeight: '400' }}> Help & Support </h5>
-          <h5 style={{ fontWeight: '400' }}> Trust & Safety </h5>
+          <h5 style={{ fontWeight: '500', fontSize: '17px' }}> Support </h5>
+          <h5 style={{ fontWeight: '400', fontSize: '14px' }}> Help & Support </h5>
+          <h5 style={{ fontWeight: '400', fontSize: '14px' }}> Trust & Safety </h5>
         </Col>
         <Col md={3} style={{ paddingLeft: '100px', paddingTop: '60px' }}>
-          <h5 style={{ fontWeight: '500' }}> Community </h5>
-          <h5 style={{ fontWeight: '400' }}> Events </h5>
-          <h5 style={{ fontWeight: '400' }}> Blog </h5>
-          <h5 style={{ fontWeight: '400' }}> Invite a Friend </h5>
+          <h5 style={{ fontWeight: '500', fontSize: '17px' }}> Community </h5>
+          <h5 style={{ fontWeight: '400', fontSize: '14px' }}> Events </h5>
+          <h5 style={{ fontWeight: '400', fontSize: '14px' }}> Blog </h5>
+          <h5 style={{ fontWeight: '400', fontSize: '14px' }}> Invite a Friend </h5>
         </Col>
       </Row>
     </Container>

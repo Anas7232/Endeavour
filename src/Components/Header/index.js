@@ -5,6 +5,8 @@ import card1 from '../../Images/card1.jpg';
 import card2 from '../../Images/card2.jpg';
 import card3 from '../../Images/card3.png'
 import Footer from '../../Components/Footer';
+import { GoogleLogin } from 'react-google-login';
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
 
@@ -12,6 +14,19 @@ const HomePage = () => {
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    // const [modal, setModal] = useState(false)
+
+    // const openSecondModal = () => {
+    //   setModal(false)
+    // }
+    
+    // const openModal = () => {
+    //   setModal(true)
+    // }
+
+    const responseGoogle = (response) => {
+      console.log(response);
+    }
 
   return (
     <>
@@ -33,12 +48,14 @@ const HomePage = () => {
             </ul>
         </nav>
 
-        <div className='text_container'>
-           <div className='text_content'>
-           <h1 style={{ fontSize: '80px', color: 'white', paddingTop: '120px', paddingLeft: '100px',fontFamily: 'Roboto Condensed, sans-serif', fontWeight: '600' }}> AN ACCELATOR TO <br /> YOUR STARTUP </h1>
-           <Button variant="primary" style={{ borderRadius: '30px',marginTop: '50px', marginLeft: '100px', padding: '10px 50px',fontFamily: 'Roboto Condensed, sans-serif' }}>Join Now</Button>
-           </div>
-        </div>
+        <Container style={{ marginTop: '140px' }}>
+          <Row>
+            <Col md={12}>
+            <h1 style={{ fontSize: '50px', color: 'white',fontFamily: 'Roboto Condensed, sans-serif', fontWeight: '500' }}> AN ACCELATOR TO <br /> YOUR STARTUP </h1>
+           <Button variant="primary" style={{ borderRadius: '30px',marginTop: '50px',fontFamily: 'Roboto Condensed, sans-serif', width: '150px' }}>Join Now</Button>
+            </Col>
+          </Row>
+        </Container>
 
     </div>
 
@@ -92,8 +109,11 @@ const HomePage = () => {
             <Card style={{border: 'none', paddingBottom: '10px', height: '80%' }} className="m-auto">
   <Card.Img variant="top" src={card1} />
   <Card.Body >
-    <Card.Title style={{ position: 'absolute', top: '0', color: '#fff', display: 'flex', justifyContent: 'space-between' }}>
-    <Card.Title></Card.Title>
+    <Card.Title style={{ top: '0', position: 'absolute' }}>
+      
+    <Card.Title>
+    
+    </Card.Title>
     </Card.Title>
   
     
@@ -120,19 +140,99 @@ const HomePage = () => {
         </Row>
     </Container>
 
-<Modal show={show} onHide={handleClose}>
+<Modal show={show} onHide={handleClose} centered>
         <Modal.Header>
-          <Modal.Title>ENDEAVOUR</Modal.Title>
+           <Modal.Title style={{ color: '#464646',fontFamily: 'Roboto Condensed, sans-serif', fontWeight: '700',paddingLeft: '135px'  }}> JOIN ENDEAVOUR</Modal.Title>
         </Modal.Header>
         <Modal.Body>
 
+        <Container>
+          <Row>
+            <Col md={6} className="m-auto">
+            <GoogleLogin
+            style={{ marginLeft: '10px', border: '1px solid black' }}
+    clientId=""
+    buttonText="Continue With Google"
+    onSuccess={responseGoogle}
+    onFailure={responseGoogle}
+  />
+            </Col>
+          </Row>
+        </Container>
+        <Container style={{ marginTop: '0px' }}>
+         <Row>
+            <Col md={12}>
+              <Container>
+                <Row>
+                  <Col md={12} className="m-auto">
+                   <div style={{ marginLeft: '140px' }}>
+                  
+                   </div>
+                  </Col>
+                </Row>
+              </Container>
+            </Col>
+          </Row>
+         </Container><br/><br/>
+         <Container>
+           <Row>
+             <Col md={12}>
+               <Container>
+                 <Row>
+                   <Col md={12}>
+                   <input type='text' placeholder='Enter Your Email' style={{ width: '100%', height: '40px', border: '1px solid #B1B1B1', padding: '5px', borderRadius: '4px' }} />
+                   </Col><br /><br />
+                   <Col md={12}>
+                   <input type='password' placeholder='Enter Code' style={{ width: '100%', height: '40px', border: '1px solid #B1B1B1', padding: '5px',borderRadius: '4px' }} />
+                   </Col><br /><br />
+                   <Col md={12}>
+                   <Button variant="primary" size="sm" style={{ width: '100%', padding: '8px',borderRadius: '4px' }}>
+                      Continue
+                  </Button>
+                   </Col>
+                 </Row>
+               </Container>
+             </Col>
+           </Row>
+         </Container>
+            <br/>
+         <Container>
+           <Row>
+             <Col md={12}>
+               <Container>
+                 <Row>
+                  <Col md={12}>
+                    <p style={{ fontSize: '13px', paddingLeft: '50px' }}> By joining I agree to receive emails from Endeavour.</p>
+                  </Col>
+                 </Row>
+               </Container>
+             </Col>
+           </Row>
+         </Container>
+
         </Modal.Body>
         <Modal.Footer>
-          {/* <Button variant="primary" onClick={handleClose}>
-           
-          </Button> */}
+        <Container>
+           <Row>
+             <Col md={12}>
+               <Container>
+                 <Row>
+                  <Col md={12}>
+                    <p style={{ fontSize: '13px', paddingLeft: '100px' }}> Already a member ?  <Link to="/" style={{ textDecoration: 'none', color: '#34D131' }}>
+                      Signin
+                    </Link> </p>
+                  </Col>
+                 </Row>
+               </Container>
+             </Col>
+           </Row>
+         </Container>
         </Modal.Footer>
       </Modal>
+
+     
+    
+
 
 <Footer />
 
