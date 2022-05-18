@@ -46,13 +46,13 @@ const Footer = () => {
         </Col>
         <Col md={4}>
           <Row>
-            <Col md={2}>  <i class="fa-brands fa-facebook"></i></Col>
-            <Col md={2}> <i class="fa-brands fa-instagram"></i></Col>
+            <Col md={2}>  <i style={{ cursor: 'pointer' }} class="fa-brands fa-facebook"></i></Col>
+            <Col md={2}> <i style={{ cursor: 'pointer' }} class="fa-brands fa-instagram"></i></Col>
             <Col md={2}>
-            <i class="fa-brands fa-twitter"></i>
+            <i style={{ cursor: 'pointer' }} class="fa-brands fa-twitter"></i>
             </Col>
-            <Col md={2}> <i class="fa-brands fa-linkedin"></i></Col>
-            <Col md={2}> <i class="fa-solid fa-globe"></i></Col>
+            <Col md={2}> <i style={{ cursor: 'pointer' }} class="fa-brands fa-linkedin"></i></Col>
+            <Col md={2}> <i style={{ cursor: 'pointer' }} class="fa-solid fa-globe"></i></Col>
             <Col md={2}> English </Col>
           </Row>
         </Col>
